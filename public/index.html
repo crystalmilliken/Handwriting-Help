@@ -67,9 +67,9 @@
                 let spaces = " ";
                 document.getElementById("word").value += `${spaces.repeat(20)}`;
                 getInput();
+                //sets the input in focus and the curser at the end
                 let inputbox = document.getElementById("word");
-               inputbox.focus(); //sets focus to element
-                
+                inputbox.focus();
             };
             function printFriendly(){
                 document.getElementById("word").style.visibility = "hidden";
