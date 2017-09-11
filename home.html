@@ -21,6 +21,16 @@
         <div id="result" style="max-width:720px"></div>
         <button id="insert">Add row of blank practice.</button>
         <button id="print">Printer Friendly version</button>
+        <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD_-I3-LPhOnHXm9jmyn4LTuqXnX21KgWU",
+            authDomain: "handwriting-88844.firebaseapp.com",
+            projectId: "handwriting-88844",
+        };
+        firebase.initializeApp(config);
+        </script>
         <script>
             function createImages(array){
             array.map((x)=>{
