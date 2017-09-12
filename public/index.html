@@ -17,8 +17,7 @@
     </head>
     <body id="main">
     <div id="instructions">Type what you would like to have printed for your student. If you want to add blank rows, click the
-            "Add spaces" button. If adding more words, press the down arrow key to get to the end of the line inside the 
-            input box.
+            "Add spaces" button. 
         </div>
         <input id="word" />
         <button id="enter">Enter</button>
@@ -37,11 +36,13 @@
         </script>
         <script>
             function createImages(array){
-            array.map((x)=>{
                 
+            array.map((x)=>{
                     if( x ==  " "){
                         document.getElementById("result").innerHTML += `<img class = "imgStyle" src="./images/space.png"/>`
-                    }else if(x == "'"){
+                    }else if(x ==  "'"){
+                        document.getElementById("result").innerHTML += `<img class = "imgStyle" src="./images/apostrophe.png"/>`
+                    }else if(x == '"'){
                         document.getElementById("result").innerHTML += `<img class = "imgStyle" src="./images/quotation.png"/>`
                     }else if(x == ","){
                         document.getElementById("result").innerHTML += `<img class = "imgStyle" src="./images/comma.png"/>`
