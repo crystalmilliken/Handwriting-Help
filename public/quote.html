@@ -1,0 +1,24 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+    <!--<script language="javascript" src="//www.quotedb.com/quote/quote.php?action=quote_of_the_day"></script>-->
+<div id="demo"></div>
+
+<script>
+    function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "www.quotedb.com/quote/quote.php?action=quote_of_the_day", true);
+  xhttp.send();
+}
+  loadDoc();  
+</script>
+<a href="//www.quotedb.com">Famous Quotes</a><br>
+    </body>
+</html>
